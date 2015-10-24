@@ -23,7 +23,9 @@ h3 {
   margin:0 0 1em 0;
 }
 
-
+li {
+  list-style: none;
+}
 
 /*************************
 HEADING
@@ -105,13 +107,13 @@ footer {
 PAGE: PORTFOLIO
 **************************/
 
-#gallery {
+.gallery-view {
   margin:0;
   padding:0;
   list-style:none;
 }
 
-#gallery li {
+.gallery-view a li {
   float: left;
   width:45%;
   margin:2.5%;
@@ -119,13 +121,16 @@ PAGE: PORTFOLIO
   color:#bdc3c7;
 }
 
-#album li {
+.
+
+.album-view a li  {
   float: left;
   width:33%;
   margin:1.5%;
 }
 
-#gallery li a p {
+
+.gallery-view li a p {
   margin: 0;
   padding: 5%;
   font-size: 0.75em;
@@ -214,6 +219,24 @@ h1, h2 {
 /*nav link*/
 nav a, nav a:visited {
   color:#fff;
+}
+
+
+/**************************
+HIDE/DISPLAY VIEWS
+**************************/
+
+
+section {
+  display: none;
+}
+
+.active-section{
+  display: inline-block;
+}
+
+.hidden-section{
+  display: none;
 }
 
 // /*selected nav link*/

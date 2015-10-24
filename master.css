@@ -18,6 +18,9 @@ img {
 h3 {
   margin: 0 0 1em 0; }
 
+li {
+  list-style: none; }
+
 /*************************
 HEADING
 **************************/
@@ -81,19 +84,24 @@ footer {
 /**************************
 PAGE: PORTFOLIO
 **************************/
-#gallery {
+.gallery-view {
   margin: 0;
   padding: 0;
   list-style: none; }
 
-#gallery li {
+.gallery-view a li {
   float: left;
   width: 45%;
   margin: 2.5%;
   background-color: #f5f5f5;
   color: #bdc3c7; }
 
-#gallery li a p {
+.album-view a li {
+  float: left;
+  width: 33%;
+  margin: 1.5%; }
+
+.gallery-view li a p {
   margin: 0;
   padding: 5%;
   font-size: 0.75em;
@@ -145,7 +153,7 @@ body {
 
 /*green header*/
 header {
-  background: #fff;
+  background-color: black;
   border-color: #599a68; }
 
 /*nav background color on mobile*/
@@ -158,12 +166,17 @@ a {
 
 /*logo text*/
 h1, h2 {
-  color: #fff; }
+  color: black; }
 
 /*nav link*/
 nav a, nav a:visited {
   color: #fff; }
 
-/*selected nav link*/
-nav a.selected, nav a:hover {
-  color: #32673f; }
+/**************************
+HIDE/DISPLAY VIEWS
+**************************/
+section {
+  display: none; }
+
+.active-section {
+  display: inline-block; }

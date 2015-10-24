@@ -8,6 +8,27 @@
     <link rel="stylesheet" href="master.css">
     <link rel="stylesheet" href="responsive.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--http://stackoverflow.com/questions/8648629/how-to-print-array-in-underscore-js-template
+      //props to Drew M and Jacob ) -->
+    <script type="text/html" id="albumTmpl">
+    <div class = "alb<%= albumName %>">
+      <li>
+        <a href="#"><img src = "<%= imgs[0] %>"></a>
+        <h3><%= albumName %></h3>
+      </li>
+    </div>
+    </script>
+    <script type="text/html" id="galTmpl">
+      <div class = "<%= albumName %> hidden-section">
+        <ul>
+          <li>
+            <% for (var img in imgs){ %>
+            <a href="#"><img src = "<%= imgs[img] %>"></a>
+            <% } %>
+          </li>
+        </ul>
+      </div>
+  </script>
   </head>
   <body>
     <header>
@@ -23,32 +44,31 @@
         </ul>
       </nav>
     </header>
-    <!-- <script type="text/html" id="bitterTmpl">
-       <article class="bit" data-index="">
-         <h3><img src="<%= avatar %>"></h3>
-         <p><%= bitter %></p>
-         <button class="delete">Delete</button>
-       </article>
-     </script>
-   </head>
    <body> -->
-    <div id="wrapper">
-      <section>
-        <ul id="gallery">
-          <script type="text/html" id="albumTmpl">
-          <li>
-            <input type="button" name="name" value="">
-              <h3><img src ="<% imgs %>"></h3>
-              <h3><%= albumName %></h3>
-          </li>
-        </script>
-        </ul>
+      <section class ="album-view active-section">
+        <div class="album-wrapper">
+          <ul class = "album-photos">
+
+          </ul>
+      </div>
+        </section>
+        <section class = "gallery-view">
+
+
+        </section>
+      <section class= "photo-view">
+        <div class="photo-wrapper">
+        </div>
       </section>
       <footer>
-        <a href="https://twitter.com/maxwellsmart84"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
-        <a href="https://www.facebook.com/maxwell.krause"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
         <p>&copy; 2015 Maxwell Krause.</p>
       </footer>
     </div>
+    <<script type="text/javascript" src="bower_components/underscore/underscore.js">
+    </script>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js">
+    </script>
+    <script type="text/javascript" src="main.js">
+    </script>
   </body>
 </html>
