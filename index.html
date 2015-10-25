@@ -19,15 +19,15 @@
     </div>
     </script>
     <script type="text/html" id="galTmpl">
-      <div class = "<%= albumName %> hidden-section">
+    <div class = "<%= albumName %> hidden-section">
         <ul>
           <li>
             <% for (var img in imgs){ %>
             <a href="#"><img src = "<%= imgs[img] %>"></a>
             <% } %>
-          </li>
-        </ul>
-      </div>
+        </li>
+      </ul>
+    </div>
   </script>
   </head>
   <body>
@@ -40,7 +40,7 @@
         </ul>
       </nav>
     </header>
-   <body> 
+   <body>
       <section class ="album-view active-section">
         <div class="album-wrapper">
           <ul class = "album-photos">
@@ -51,12 +51,12 @@
         <section class = "gallery-view">
           <nav class="sideNav">
             <ul>
-              <li><a href="#">Wedding</a></li>
-              <li><a href="#">Bear</a></li>
-              <li><a href="#">Love</a></li>
-              <li><a href="#">Friends</a></li>
-              <li><a href="#">Greece</a></li>
-              <li><a href="#">Family</a></li>
+              <li><a rel ="Wedding" href="#">Wedding</a></li>
+              <li><a rel ="Bear" href="#">Bear</a></li>
+              <li><a rel ="Love" href="#">Love</a></li>
+              <li><a rel ="Friends" href="#">Friends</a></li>
+              <li><a rel ="Greece" href="#">Greece</a></li>
+              <li><a rel ="Family" href="#">Family</a></li>
             </ul>
           </nav>
           <div class = "gallery-photos">

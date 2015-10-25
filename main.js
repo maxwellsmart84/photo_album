@@ -19,8 +19,6 @@ var photoData = [
       "img/greece/greece_03.jpg",
       "img/greece/greece_04.jpg",
       "img/greece/greece_05.jpg",
-      "img/greece/greece_06.jpg",
-      "img/greece/greece_07.jpg",
     ]
   },
 
@@ -32,8 +30,6 @@ var photoData = [
       "img/love/love_03.jpg",
       "img/love/love_04.jpg",
       "img/love/love_05.jpg",
-      "img/love/love_06.jpg",
-      "img/love/love_07.jpg",
     ]
   },
   {
@@ -53,7 +49,6 @@ var photoData = [
       "img/family/family_03.jpg",
       "img/family/family_04.jpg",
       "img/family/family_05.jpg",
-      "img/family/family_06.jpg",
     ]
   },
   {
@@ -62,7 +57,7 @@ var photoData = [
       "img/friends/friends_01.jpg",
       "img/friends/friends_02.jpg",
       "img/friends/friends_03.jpg",
-      "img/friends/friends_04.jpg",
+      "img/friends/friends_04.gif",
       "img/friends/friends_05.jpg",
       "img/friends/friends_06.jpg",
     ]
@@ -92,31 +87,35 @@ $(document).ready(function () {
   $(".album-view").html(photoHTMLalb);
   $('.gallery-photos').html(photoHTMLgal);
 
-  var albumClick= $(".album-view div a").on("click",function(event){
+  $(".album-view div a").on("click",function(event){
     event.preventDefault();
-    console.log(event.target);
     $(".album-view").removeClass('active-section');
     $(".gallery-view").addClass('active-section');
-    var clickTarget = (event.target);
-    if (clickTarget === ".Bear"){
+    var clickT =(event.target);
+    var clickTarget = $(clickT).attr('src');
+    // console.log(clickTarget.search("red"));
+    if (clickTarget.search("bear") > -1) {
       $(".gallery-photos").find(".Bear").removeClass("hidden-section");
     }
-    if ($(".album-view div").hasClass("Wedding")){
+    if (clickTarget.search("wedding") > -1) {
       $(".gallery-photos").find(".Wedding").removeClass("hidden-section");
     }
-    if ($(".album-view div").hasClass("Love")){
+    if (clickTarget.search("love") > -1){
       $(".gallery-photos").find(".Love").removeClass("hidden-section");
     }
-    if ($(".album-view div").hasClass("Family")){
+    if (clickTarget.search("family") > -1){
       $(".gallery-photos").find(".Family").removeClass("hidden-section");
     }
-    if ($(".album-view div").hasClass("Friends")){
+    if (clickTarget.search("friends") > -1){
       $(".gallery-photos").find(".Friends").removeClass("hidden-section");
     }
-    if ($(".album-view div").hasClass("Greece")){
+    if (clickTarget.search("greece") > -1){
       $(".gallery-photos").find(".Greece").removeClass("hidden-section");
     }
   });
+
+
+
 });
 
 //   var albSelector =  .each(photos, function(name){
