@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://localhost:3000/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Photos | Your Life</title>
+    <link rel="stylesheet" href="./Photos _ Your Life_files/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./Photos _ Your Life_files/css">
+    <link rel="stylesheet" href="./Photos _ Your Life_files/master.css">
+    <link rel="stylesheet" href="./Photos _ Your Life_files/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--http://stackoverflow.com/questions/8648629/how-to-print-array-in-underscore-js-template
+      //props to Drew M and Jacob ) -->
+    <script type="text/html" id="albumTmpl">
+    <div class = "<%= albumName %>">
+      <li>
+        <a href="#"><img src = "<%= imgs[0] %>"></a>
+        <h3><%= albumName %></h3>
+      </li>
+    </div>
+    </script>
+    <script type="text/html" id="galTmpl">
+      <div class = "<%= albumName %> hidden-section">
+        <ul>
+          <li>
+            <% for (var img in imgs){ %>
+            <a href="#"><img src = "<%= imgs[img] %>"></a>
+            <% } %>
+          </li>
+        </ul>
+      </div>
+  </script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./Photos _ Your Life_files/Photos _ Your Life.html"></a></li>
+          <li><a href="http://localhost:3000/about.html"></a></li>
+          <li><a href="http://localhost:3000/contact.html"></a></li>
+        </ul>
+      </nav>
+    </header>
+    --&gt;
+      <section class="album-view">
+    <div class="Bear">
+      <li>
+        <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/bear_01.jpg"></a>
+        <h3>Bear</h3>
+      </li>
+    </div>
+    
+    <div class="Greece">
+      <li>
+        <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/greece_01.jpg"></a>
+        <h3>Greece</h3>
+      </li>
+    </div>
+    
+    <div class="Love">
+      <li>
+        <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/love_01.jpg"></a>
+        <h3>Love</h3>
+      </li>
+    </div>
+    
+    <div class="Wedding">
+      <li>
+        <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/wedding_01.jpg"></a>
+        <h3>Wedding</h3>
+      </li>
+    </div>
+    
+    <div class="Family">
+      <li>
+        <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/family_01.jpg"></a>
+        <h3>Family</h3>
+      </li>
+    </div>
+    
+    <div class="Friends">
+      <li>
+        <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/friends_01.jpg"></a>
+        <h3>Friends</h3>
+      </li>
+    </div>
+    </section>
+        <section class="gallery-view active-section">
+          <nav class="sideNav">
+            <ul>
+              <li><a href="http://localhost:3000/index.html#">Wedding</a></li>
+              <li><a href="http://localhost:3000/index.html#">Bear</a></li>
+              <li><a href="http://localhost:3000/index.html#">Love</a></li>
+              <li><a href="http://localhost:3000/index.html#">Friends</a></li>
+              <li><a href="http://localhost:3000/index.html#">Greece</a></li>
+              <li><a href="http://localhost:3000/index.html#">Family</a></li>
+            </ul>
+          </nav>
+          <div class="gallery-photos">
+      <div class="Bear hidden-section">
+        <ul>
+          <li>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/bear_01.jpg"></a>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/bear_02.jpg"></a>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/bear_03.jpg"></a>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/bear_04.jpg"></a>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/bear_05.jpg"></a>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/bear_06.jpg"></a>
+            
+          </li>
+        </ul>
+      </div>
+  
+      <div class="Greece hidden-section">
+        <ul>
+          <li>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/greece_01.jpg"></a>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/greece_02.jpg"></a>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/greece_03.jpg"></a>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/greece_04.jpg"></a>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/greece_05.jpg"></a>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/greece_06.jpg"></a>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/greece_07.jpg"></a>
+            
+          </li>
+        </ul>
+      </div>
+  
+      <div class="Love hidden-section">
+        <ul>
+          <li>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/love_01.jpg"></a>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/love_02.jpg"></a>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/love_03.jpg"></a>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/love_04.jpg"></a>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/love_05.jpg"></a>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/love_06.jpg"></a>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/love_07.jpg"></a>
+            
+          </li>
+        </ul>
+      </div>
+  
+      <div class="Wedding hidden-section">
+        <ul>
+          <li>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/wedding_01.jpg"></a>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/wedding_02.jpg"></a>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/wedding_03.jpg"></a>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/wedding_04.jpg"></a>
+            
+          </li>
+        </ul>
+      </div>
+  
+      <div class="Family hidden-section">
+        <ul>
+          <li>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/family_01.jpg"></a>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/family_02.jpg"></a>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/family_03.jpg"></a>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/family_04.jpg"></a>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/family_05.jpg"></a>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/family_06.jpg"></a>
+            
+          </li>
+        </ul>
+      </div>
+  
+      <div class="Friends hidden-section">
+        <ul>
+          <li>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/friends_01.jpg"></a>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/friends_02.jpg"></a>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/friends_03.jpg"></a>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/friends_04.jpg"></a>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/friends_05.jpg"></a>
+            
+            <a href="http://localhost:3000/index.html#"><img src="./Photos _ Your Life_files/friends_06.jpg"></a>
+            
+          </li>
+        </ul>
+      </div>
+  </div>
+
+        </section>
+      <section class="photo-view">
+        <div class="photo-wrapper">
+        </div>
+      </section>
+      <footer>
+        <p>© 2015 Maxwell Krause.</p>
+      </footer>
+    
+    &lt;<script type="text/javascript" src="./Photos _ Your Life_files/underscore.js">
+    </script>
+    <script type="text/javascript" src="./Photos _ Your Life_files/jquery.js">
+    </script>
+    <script type="text/javascript" src="./Photos _ Your Life_files/main.js">
+    </script>
+  
+
+</body></html>

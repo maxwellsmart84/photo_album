@@ -22,7 +22,7 @@
     border: 2px black solid;
     padding: 15px;
     color: black; }
-  .album-view .Wedding img {
+  .albWedding img {
     height: 268px; }
   /*************************
   GALLERY VIEW
@@ -79,4 +79,5 @@
     font-size: 0.825em;
     margin-bottom: 20px; }
   header {
-    border-bottom: 5px solid #599a68; } }
+    border-bottom: 5px solid #599a68;
+    margin-bottom: 60px; } }

@@ -92,33 +92,7 @@ $(document).ready(function () {
   $(".album-view").html(photoHTMLalb);
   $('.gallery-photos').html(photoHTMLgal);
 
-  var albumClick= $(".album-view div a").on("click",function(event){
-    event.preventDefault();
-    console.log(event.target);
-    $(".album-view").removeClass('active-section');
-    $(".gallery-view").addClass('active-section');
-    var clickTarget = (event.target);
-    if (clickTarget === ".Bear"){
-      $(".gallery-photos").find(".Bear").removeClass("hidden-section");
-    }
-    if ($(".album-view div").hasClass("Wedding")){
-      $(".gallery-photos").find(".Wedding").removeClass("hidden-section");
-    }
-    if ($(".album-view div").hasClass("Love")){
-      $(".gallery-photos").find(".Love").removeClass("hidden-section");
-    }
-    if ($(".album-view div").hasClass("Family")){
-      $(".gallery-photos").find(".Family").removeClass("hidden-section");
-    }
-    if ($(".album-view div").hasClass("Friends")){
-      $(".gallery-photos").find(".Friends").removeClass("hidden-section");
-    }
-    if ($(".album-view div").hasClass("Greece")){
-      $(".gallery-photos").find(".Greece").removeClass("hidden-section");
-    }
-  });
 });
-
 //   var albSelector =  .each(photos, function(name){
 //     if (albSelector === el.photos.albumName) {
 //       $(albSelector).addClass ("active-selection");
@@ -134,7 +108,9 @@ $(document).ready(function () {
 
 
 // var selectedAlbum = $(."album-photos").children().each(function(){
-
+var albumNames = _.each(photoData, function(el,idx,arr){
+  return el.photoData;
+});
 
 
   // $(".gallery-photos div").each(photoData,function(el){
@@ -143,8 +119,8 @@ $(document).ready(function () {
   //   .on("click", function(){
   //   event.preventDefault();
   //   if (albumNames = "Bear") {}
-    // $(".album-view").removeClass('active-section');
-    // $(".gallery-view").addClass('active-section');
-    // $(".").addClass('active-section');
+  //   $(".album-view").removeClass('active-section');
+  //   $(".gallery-view").addClass('active-section');
+  //   $(".").addClass('active-section');
   //
   // })

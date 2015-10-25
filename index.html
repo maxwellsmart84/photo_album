@@ -11,7 +11,7 @@
     <!--http://stackoverflow.com/questions/8648629/how-to-print-array-in-underscore-js-template
       //props to Drew M and Jacob ) -->
     <script type="text/html" id="albumTmpl">
-    <div class = "alb<%= albumName %>">
+    <div class = "<%= albumName %>">
       <li>
         <a href="#"><img src = "<%= imgs[0] %>"></a>
         <h3><%= albumName %></h3>
@@ -40,15 +40,15 @@
         </ul>
       </nav>
     </header>
-   <body> -->
-      <section class ="album-view">
+   <body> 
+      <section class ="album-view active-section">
         <div class="album-wrapper">
           <ul class = "album-photos">
 
           </ul>
       </div>
         </section>
-        <section class = "gallery-view active-section">
+        <section class = "gallery-view">
           <nav class="sideNav">
             <ul>
               <li><a href="#">Wedding</a></li>
