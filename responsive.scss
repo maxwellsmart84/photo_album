@@ -27,7 +27,7 @@
     display: inline-block;
 
   }
-  
+
 
 .album-view h3 {
   text-align: center;
@@ -36,17 +36,40 @@
   color: black;
 }
 
-
+.albWedding img {
+  height:268px;
+}
 
 
   /*************************
-  GALLER VIEW
+  GALLERY VIEW
   **************************/
-
-  .gallery-view a li {
-    width: 28.3333%;
-    display: inline-block;
+  .sideNav {
+    background-color: black;
+    width: 22%;
+    height: 600px;
+    float: left;
+    font-size: 40px;
+    position: relative;
+    bottom: 99px;
+    right: 31px;
   }
+
+  .sideNav ul li{
+    margin:5px;
+    padding:10px;
+  }
+  .gallery-photos{
+      float: left;
+      width:70%;
+      height:100%;
+      margin:1.5%;
+      display: inline-block;
+}
+
+.gallery-photos img {
+  width: 32%;
+}
 
 
   /*#gallery-view li:nth-child(4n) {
@@ -72,7 +95,7 @@
   /*************************
   HEADER
   **************************/
-  nav {
+   header nav {
     background:none;
     float:right;
     margin-right:5%;

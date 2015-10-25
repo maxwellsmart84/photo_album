@@ -96,16 +96,16 @@ PAGE: PORTFOLIO
   background-color: #f5f5f5;
   color: #bdc3c7; }
 
-.album-view a li {
-  float: left;
-  width: 33%;
-  margin: 1.5%; }
-
 .gallery-view li a p {
   margin: 0;
   padding: 5%;
   font-size: 0.75em;
   color: #bdc3c7; }
+
+.album-view a li {
+  float: left;
+  width: 33%;
+  margin: 1.5%; }
 
 /**************************
 PAGE: ABOUT
@@ -180,3 +180,6 @@ section {
 
 .active-section {
   display: inline-block; }
+
+.hidden-section {
+  display: none; }

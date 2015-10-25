@@ -85,34 +85,33 @@ var photoData = [
   _.each(photoData, function (el){
     photoHTMLgal += photoTemplate2(el);
   });
+//YOU ARE TRYING TO FIGURE OUT HOW TO WRITE ONE FUNCTION TO ASSEMBLE ALL THE ALBUM
 
-var selectedAlbum = _.map(photoData, function(el,idx,arr){
-    return {albumName : el.albumName};
-});
 
 $(document).ready(function () {
   $(".album-view").html(photoHTMLalb);
-  $('.gallery-view').html(photoHTMLgal);
+  $('.gallery-photos').html(photoHTMLgal);
 
 //   var albSelector =  .each(photos, function(name){
 //     if (albSelector === el.photos.albumName) {
 //       $(albSelector).addClass ("active-selection");
 //     }
 //   });
-
-          // selectedAlbum += el.albumName;
-          // $(".album-view").removeClass('active-section');
-          // $(".gallery-view").addClass('active-section');
-          // $(selectedAlbum).removeClass('hidden-section');
+//
+//           selectedAlbum += el.albumName;
+//           $(".album-view").removeClass('active-section');
+//           $(".gallery-view").addClass('active-section');
+//           $(selectedAlbum).removeClass('hidden-section');
 // });
-  //View Switches
-  // $(selectedAlbum > a).on(click, function(){
-  //   event.preventDefault();
-  //   $(".album-view").removeClass('active-section');
-  //   $(".gallery-view").addClass('active-section');
-  //   $(".Bear").addClass('active-section');
-  //
-  // });
+  // View Switches
+  $(".album-photos" > a).on(click, function(){
+    event.preventDefault();
+    $(".album-view").removeClass('active-section');
+    (".album-view").addClass('hidden-section');
+    $(".gallery-view").addClass('active-section');
+    $(".").addClass('active-section');
+
+  });
 
 
 });

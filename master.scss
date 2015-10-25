@@ -121,7 +121,12 @@ PAGE: PORTFOLIO
   color:#bdc3c7;
 }
 
-.
+.gallery-view li a p {
+  margin: 0;
+  padding: 5%;
+  font-size: 0.75em;
+  color: #bdc3c7;
+}
 
 .album-view a li  {
   float: left;
@@ -130,12 +135,7 @@ PAGE: PORTFOLIO
 }
 
 
-.gallery-view li a p {
-  margin: 0;
-  padding: 5%;
-  font-size: 0.75em;
-  color: #bdc3c7;
-}
+
 
 
 
