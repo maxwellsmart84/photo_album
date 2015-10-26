@@ -113,8 +113,40 @@ $(document).ready(function () {
       $(".gallery-photos").find(".Greece").removeClass("hidden-section");
     }
   });
-
-
+  $(".sideNav ul li a").on("click",function(event){
+    // event.preventDefault();
+    $(".album-view").removeClass('active-section');
+    $(".gallery-view").addClass('active-section');
+    var clickT =(event.target);
+    var clickTarget = $(clickT).attr('rel');
+    console.log(clickTarget);
+    $(".gallery-photos div").addClass("hidden-section");
+    if (clickTarget === "Bear") {
+      $(".gallery-photos").find(".Bear").removeClass("hidden-section");
+    }
+    if (clickTarget === "Wedding") {
+      $(".gallery-photos").find(".Wedding").removeClass("hidden-section");
+    }
+    if (clickTarget === "Love"){
+      $(".gallery-photos").find(".Love").removeClass("hidden-section");
+    }
+    if (clickTarget === "Family"){
+      $(".gallery-photos").find(".Family").removeClass("hidden-section");
+    }
+    if (clickTarget === "Friends"){
+      $(".gallery-photos").find(".Friends").removeClass("hidden-section");
+    }
+    if (clickTarget === "Greece"){
+      $(".gallery-photos").find(".Greece").removeClass("hidden-section");
+    }
+    if (clickTarget === "AlbumView"){
+      $(".album-view").addClass('active-section');
+      $(".gallery-view").removeClass('active-section');
+    }
+  });
+  $(".gallery-photos div a").on("click", function(event){
+      console.log(event.target);
+  });
 
 });
 
