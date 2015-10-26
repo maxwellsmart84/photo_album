@@ -50,11 +50,24 @@
   /*************************
 PHOTO VIEW
 **************************/
-  .photoBig {
+  .photo-view {
     width: 100%;
-    height: 300px;
-    background-color: red;
-    z-index: -1; }
+    background-color: black;
+    height: 900px; }
+  .photo-wrapper {
+    width: 66%;
+    background-color: black;
+    position: relative;
+    left: 247px;
+    top: 50px; }
+  .photo-wrapper img {
+    width: 100%; }
+  .backtoAlb {
+    background-color: grey;
+    width: 20%;
+    height: 50px;
+    padding: 5px;
+    position: relative; }
   /*************************
   PAGE: ABOUT
 **************************/

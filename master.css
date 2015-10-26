@@ -107,6 +107,10 @@ PAGE: PORTFOLIO
   width: 33%;
   margin: 1.5%; }
 
+.photoBig img {
+  width: 100%;
+  height: 500px; }
+
 /**************************
 PAGE: ABOUT
 **************************/

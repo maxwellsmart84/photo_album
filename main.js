@@ -145,8 +145,25 @@ $(document).ready(function () {
     }
   });
   $(".gallery-photos div a").on("click", function(event){
-      console.log(event.target);
+    event.preventDefault();
+    $(".photo-view").addClass('active-section');
+    $(".album-view").removeClass('active-section');
+    $(".gallery-view").removeClass('active-section');
+    $("header").addClass('hidden-section');
+    $("footer").addClass('hidden-section');
+    var clickT =(event.target);
+    var clickTarget = $(clickT).attr('src');
+    $(".photo-wrapper img").attr("src", clickTarget);
   });
+
+  $(".backtoAlb").on("click", function(event){
+    $(".photo-view").removeClass('active-section');
+    $(".album-view").removeClass('active-section');
+    $(".gallery-view").addClass('active-section');
+    $("header").removeClass('hidden-section');
+    $("footer").removeClass('hidden-section');
+  });
+
 
 });
 

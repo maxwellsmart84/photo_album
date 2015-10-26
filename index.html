@@ -23,7 +23,7 @@
         <ul>
           <li>
             <% for (var img in imgs){ %>
-            <a href="#"><img src = "<%= imgs[img] %>"></a>
+            <a href="#"><img rel= "1" src = "<%= imgs[img] %>"></a>
             <% } %>
         </li>
       </ul>
@@ -62,11 +62,13 @@
           </nav>
           <div class = "gallery-photos">
           </div>
-          <div class = "photoBig">
-          </div>
         </section>
       <section class= "photo-view">
+        <div class = "backtoAlb">
+          <a href="#"><h1>Back to Album</h1></a>
+        </div>
         <div class="photo-wrapper">
+          <img src="" alt="" />
         </div>
       </section>
       <footer>
