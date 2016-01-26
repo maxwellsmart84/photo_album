@@ -4,6 +4,9 @@ GENERAL
 body {
   font-family: 'Work Sans', sans-serif; }
 
+header {
+  height: 80px; }
+
 #wrapper {
   max-width: 940px;
   margin: 0 auto;
