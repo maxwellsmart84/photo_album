@@ -1,0 +1,29 @@
+{
+  "name": "photo_album",
+  "version": "1.0.0",
+  "description": "jQuery photo album app",
+  "main": "server.js",
+  "dependencies": {
+    "bower": "^1.6.9",
+    "express": "^4.13.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "postinstall": "bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxwellsmart84/photo_album.git"
+  },
+  "author": "Maxwell Krause",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxwellsmart84/photo_album/issues"
+  },
+  "homepage": "https://github.com/maxwellsmart84/photo_album#readme",
+  "dependencies": {
+    "bower": "^1.7.2",
+    "express": "^4.13.4"
+  }
+}
